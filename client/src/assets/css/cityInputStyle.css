@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Raleway:wght@600&display=swap");
+
+.city-input-container {
+  margin: 0 auto 0.7em;
+  width: 35%;
+
+  text-align: center;
+}
+
+.city-input-container input {
+  border-radius: 20px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border: 0;
+  height: 25px;
+  padding: 0 7px;
+}
+
+.city-input-container button {
+  height: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  border: 0;
+  background-color: white;
+  font-family: Montserrat;
+  vertical-align: top;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}

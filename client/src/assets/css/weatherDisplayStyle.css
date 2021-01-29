@@ -1,0 +1,59 @@
+.weather-container {
+  background-color: #f6f5f5;
+  width: 35%;
+  margin: auto;
+  padding: 0.7em;
+  text-align: left;
+  line-height: 0.1em;
+  box-shadow: 3px 3px 3px rgb(201, 196, 196);
+  border-radius: 25px;
+  color: rgb(92, 91, 91);
+  overflow: hidden;
+}
+
+.info-container {
+  width: 50%;
+  float: left;
+  color: rgb(158, 156, 156);
+}
+
+.temperature-container {
+  width: 50%;
+  float: left;
+  color: rgb(92, 91, 91);
+}
+
+.weather-container h2 {
+  line-height: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.temperature-container sup {
+  font-size: 1rem;
+}
+
+.temperature-container img {
+  border-radius: 50%;
+  float: right;
+}
+
+.temperature-container h1 {
+  padding-top: 5px;
+  display: inline-block;
+}
+
+@media (max-width: 1000px) {
+  .temperature-container {
+    float: none;
+    width: 100%;
+  }
+
+  .info-container {
+    float: none;
+    width: 100%;
+  }
+  .info-container h4 {
+    margin-bottom: 0;
+  }
+}
