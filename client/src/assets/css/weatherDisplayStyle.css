@@ -1,6 +1,6 @@
 .weather-container {
   background-color: #f6f5f5;
-  width: 35%;
+  width: 40%;
   margin: auto;
   padding: 0.7em;
   text-align: left;
@@ -55,5 +55,8 @@
   }
   .info-container h4 {
     margin-bottom: 0;
+  }
+  .weather-container {
+    width: 70%;
   }
 }
