@@ -24,7 +24,7 @@ function CityInput({ handleSubmit }) {
             setCity(e.target.value);
           }}
         />
-        <button className="btn btn-primary">Submit</button>
+        <button>Submit</button>
       </form>
     </div>
   );

@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import axios from "axios";
-import _ from "lodash";
 import WeatherDisplay from "./WeatherDisplay";
 import CityInput from "./CityInput";
+import CityChart from "./CityChart";
 
 function CurrentTemperature() {
-  const [weatherReport, setWeatherReport] = useState({});
+  const [weatherReport, setWeatherReport] = useState(false);
 
   const handleSubmit = async (city) => {
     const response = await axios({
       method: "POST",
-      url: "https://desafio-aevo-backend.herokuapp.com/current",
+      url: "/current",
       data: { city },
     });
     const data = await response.data;
@@ -20,7 +20,8 @@ function CurrentTemperature() {
   return (
     <>
       <CityInput handleSubmit={handleSubmit} />
-      {_.isEmpty(weatherReport) ? null : <WeatherDisplay {...weatherReport} />}
+      {weatherReport ? <WeatherDisplay {...weatherReport} /> : null}
+      <CityChart />
     </>
   );
 }
