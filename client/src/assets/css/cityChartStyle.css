@@ -2,3 +2,9 @@
   width: 80%;
   margin: 2% auto;
 }
+
+@media (max-width: 1000px) {
+  .chart {
+    width: 100%;
+  }
+}
