@@ -1,19 +1,13 @@
 import React, { useState } from "react";
-import axios from "axios";
 import WeatherDisplay from "./WeatherDisplay";
 import CityInput from "./CityInput";
-import CityChart from "./CityChart";
+import RequestWrapper from "../wrappers/RequestWrapper";
 
 function CurrentTemperature() {
   const [weatherReport, setWeatherReport] = useState(false);
 
   const handleSubmit = async (city) => {
-    const response = await axios({
-      method: "POST",
-      url: "/current",
-      data: { city },
-    });
-    const data = await response.data;
+    const data = await RequestWrapper.postRequest("/current", { city });
     setWeatherReport(data);
   };
 
@@ -21,7 +15,6 @@ function CurrentTemperature() {
     <>
       <CityInput handleSubmit={handleSubmit} />
       {weatherReport ? <WeatherDisplay {...weatherReport} /> : null}
-      <CityChart />
     </>
   );
 }

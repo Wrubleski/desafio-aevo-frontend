@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import RequestWrapper from "../wrappers/RequestWrapper";
 import { Bar } from "react-chartjs-2";
 import "../assets/css/cityChartStyle.css";
 
@@ -8,12 +8,7 @@ function CityChart() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await axios({
-        method: "GET",
-        url: "/current",
-      });
-
-      const data = await response.data;
+      const data = await RequestWrapper.getRequest("/current");
       setChartData({
         labels: data.map((element) => element.city + " - " + element.country),
         datasets: [
