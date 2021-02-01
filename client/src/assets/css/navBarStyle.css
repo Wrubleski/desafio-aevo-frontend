@@ -1,0 +1,19 @@
+.navbar {
+  height: 40px;
+  background-color: #f9f7f7;
+  margin-bottom: 30px;
+}
+
+.navbar-brand {
+  color: rgb(92, 91, 91);
+  padding-left: 10px;
+  margin: 0;
+  vertical-align: middle;
+  line-height: 40px;
+}
+
+@media (max-width: 1000px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+}
