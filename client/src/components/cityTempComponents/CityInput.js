@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../assets/css/cityInputStyle.css";
+import "../../assets/css/cityInputStyle.css";
 
 function CityInput({ handleSubmit }) {
   const [city, setCity] = useState("");

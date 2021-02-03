@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import RequestWrapper from "../wrappers/RequestWrapper";
+import RequestWrapper from "../../wrappers/RequestWrapper";
 import { Bar } from "react-chartjs-2";
-import "../assets/css/cityChartStyle.css";
+import "../../assets/css/cityChartStyle.css";
 
-function CityChart() {
+function CityChart({ shouldUpdate }) {
   const [chartData, setChartData] = useState({});
 
   useEffect(() => {
@@ -38,7 +38,7 @@ function CityChart() {
     }
 
     fetchData();
-  }, [chartData]);
+  }, [shouldUpdate]);
 
   return (
     <div className="chart">

@@ -1,6 +1,6 @@
 import React from "react";
-import CurrentTemperature from "./components/CurrentTemperature";
-import CityChart from "./components/CityChart";
+import CityTempApp from "./components/CityTempApp";
+
 import "./assets/css/main.css";
 import NavBar from "./components/NavBar";
 
@@ -9,8 +9,7 @@ function App() {
     <>
       <NavBar />
       <div className="main-container">
-        <CurrentTemperature />
-        <CityChart />
+        <CityTempApp />
       </div>
     </>
   );
