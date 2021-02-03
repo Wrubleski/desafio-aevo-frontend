@@ -8,7 +8,7 @@ function CityChart() {
 
   useEffect(() => {
     async function fetchData() {
-      const data = await RequestWrapper.getRequest("/current");
+      const data = await RequestWrapper.getRequest("/city-search-history");
       setChartData({
         labels: data.map((element) => element.city + " - " + element.country),
         datasets: [
