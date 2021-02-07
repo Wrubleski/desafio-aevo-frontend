@@ -1,5 +1,5 @@
 import React from "react";
-import CityTempApp from "./components/CityTempApp";
+import Weather from "./components/WeatherComponents/WeatherMain";
 
 import "./assets/css/main.css";
 import NavBar from "./components/NavBar";
@@ -9,7 +9,7 @@ function App() {
     <>
       <NavBar />
       <div className="main-container">
-        <CityTempApp />
+        <Weather />
       </div>
     </>
   );

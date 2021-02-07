@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/css/weatherDisplayStyle.css";
+import "../../assets/css/WeatherApp/weatherDisplayStyle.css";
 
 function WeatherDisplay(props) {
   if (props.success === false) {

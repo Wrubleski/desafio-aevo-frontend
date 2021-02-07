@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../assets/css/cityInputStyle.css";
+import "../../assets/css/WeatherApp/cityInputStyle.css";
 
 function CityInput({ handleSubmit }) {
   const [city, setCity] = useState("");
@@ -15,6 +15,9 @@ function CityInput({ handleSubmit }) {
           }
         }}
       >
+        <div className="city-label">
+          <label htmlFor="city">Browse For Your Weather</label>
+        </div>
         <input
           placeholder="Enter your city here."
           type="text"

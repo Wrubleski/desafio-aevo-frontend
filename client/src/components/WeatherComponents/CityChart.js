@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import RequestWrapper from "../../wrappers/RequestWrapper";
 import { Bar } from "react-chartjs-2";
-import "../../assets/css/cityChartStyle.css";
+import "../../assets/css/WeatherApp/cityChartStyle.css";
 
 function CityChart({ shouldUpdate }) {
   const [chartData, setChartData] = useState({});
@@ -42,6 +42,9 @@ function CityChart({ shouldUpdate }) {
 
   return (
     <div className="chart">
+      <div className="chart-header">
+        <h3>Most Searched Cities</h3>
+      </div>
       <Bar
         data={chartData}
         options={{ scales: { yAxes: [{ ticks: { beginAtZero: true } }] } }}

@@ -25,6 +25,13 @@
   vertical-align: top;
 }
 
+.city-label {
+  color: rgb(92, 91, 91);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 7px;
+}
+
 input:focus {
   outline: none;
 }

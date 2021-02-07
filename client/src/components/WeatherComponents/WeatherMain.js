@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import WeatherDisplay from "./cityTempComponents/WeatherDisplay";
-import CityInput from "./cityTempComponents/CityInput";
-import RequestWrapper from "../wrappers/RequestWrapper";
-import CityChart from "./cityTempComponents/CityChart";
+import WeatherDisplay from "./WeatherDisplay";
+import CityInput from "./CityInput";
+import RequestWrapper from "../../wrappers/RequestWrapper";
+import CityChart from "./CityChart";
 
-function CurrentTemperature() {
+function Weather() {
   const [weatherReport, setWeatherReport] = useState(false);
   const [shouldChartUpdate, setShouldChartUpdate] = useState(false);
 
@@ -23,4 +23,4 @@ function CurrentTemperature() {
   );
 }
 
-export default CurrentTemperature;
+export default Weather;
