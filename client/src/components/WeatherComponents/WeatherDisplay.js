@@ -2,7 +2,7 @@ import React from "react";
 import "../../assets/css/WeatherApp/weatherDisplayStyle.css";
 
 function WeatherDisplay(props) {
-  if (props.success === false) {
+  if (props.status === 500) {
     return (
       <>
         <div className="weather-container">
